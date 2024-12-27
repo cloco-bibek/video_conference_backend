@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .config import settings
-from .websocket.handlers import WebRTCHandler
+from app.config import settings
+from app.websocket.handlers import WebRTCHandler
 from fastapi import WebSocket
 
 app = FastAPI(title="WebRTC Signaling Server")

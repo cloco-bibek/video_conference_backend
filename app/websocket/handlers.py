@@ -1,6 +1,6 @@
 from fastapi import WebSocket, WebSocketDisconnect
-from ..models import WebRTCMessage
-from .connection_manager import ConnectionManager
+from app.models import WebRTCMessage
+from app.websocket.connection_manager import ConnectionManager
 import logging
 
 logger = logging.getLogger(__name__)
